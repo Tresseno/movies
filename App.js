@@ -5,10 +5,10 @@ import {Feather} from '@expo/vector-icons'
 export default function App() {
   // Array de imagens
   const imagens = [
-    require('./assets/1.png'),
-    require('./assets/2.png'),
-    require('./assets/3.png'),
-    require('./assets/4.png')
+    require('./assets/1.jpg'),
+    require('./assets/2.jpg'),
+    require('./assets/3.jpg'),
+    require('./assets/4.jpg')
   ];
 
   // Escolhe uma imagem aleatória
@@ -86,8 +86,8 @@ const styles = StyleSheet.create({
   },
 
   imageBanner: {
-    width: '70%',
-    height: 450,
+    width: '92%',
+    height: 200,
     marginTop: 15,
     borderRadius: 10
   },
