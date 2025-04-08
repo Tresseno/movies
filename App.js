@@ -4,6 +4,7 @@ import {Feather} from '@expo/vector-icons'
 import Cabecalho from './src/componentes/cabecalho/index.js'
 import Pesquisa from './src/componentes/barraPesquisa/index.js'
 import Banner from './src/componentes/banner/index.js'
+import CardMovies from './src/componentes/cardsFilmes/index.js';
 
 export default function App() {
   return (
@@ -14,6 +15,8 @@ export default function App() {
       <Pesquisa/>
 
       <Banner/>
+
+      <CardMovies/>
 
     </View>
   );
