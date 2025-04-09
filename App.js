@@ -5,29 +5,48 @@ import Cabecalho from './src/componentes/cabecalho/index.js'
 import Pesquisa from './src/componentes/barraPesquisa/index.js'
 import Banner from './src/componentes/banner/index.js'
 import CardMovies from './src/componentes/cardsFilmes/index.js';
+import { ScrollView } from 'react-native-web';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
 
-      <Cabecalho/>
+      <View style={styles.containerView}>
 
-      <Pesquisa/>
+        <Cabecalho/>
 
-      <Banner/>
+        <Pesquisa/>
 
-      <CardMovies/>
+        <Banner/>
 
-    </View>
+        <Text style={styles.textBanner}>Filmes</Text>
+
+        <CardMovies/>
+
+      </View>
+
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#141a29',
-    alignItems: "center",
+    backgroundColor: '#141a28',
     width: '100%',
     height: '100%'
   },
+
+  containerView:{
+    display:'flex',
+    flexDirection:'column',
+    alignItems:'center'
+  },
+
+  textBanner: {
+    fontSize: 30,
+    color: "white",
+    marginTop: 15,
+    marginLeft: -180,
+    fontWeight: 'bold'
+  }
 });
