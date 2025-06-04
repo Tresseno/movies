@@ -2,8 +2,10 @@ import {StyleSheet, Text, View, FlatList, ScrollView} from 'react-native';
 import Banner from "../../componentes/banner";
 import CardMovies from "../../componentes/cardsFilmes";
 import Filmes from "../../componentes/movies.js";
+import Filmes2 from "../../componentes/movies2.js";
 import Pesquisa from "../../componentes/barraPesquisa";
 import Cabecalho from "../../componentes/cabecalho";
+import styles from "./style.js"
 
 
 export default function Home(){
@@ -37,6 +39,21 @@ export default function Home(){
 
                 />
 
+                <FlatList
+
+                    horizontal = {true}
+
+                    data = {Filmes2}
+
+                    keyExtractor={(item) => item.id}
+                    renderItem={({item}) => (
+
+                    <CardMovies titulo = {item.nome} nota = {item.nota} imagem = {item.imagem}/>
+
+                    )}
+
+                />
+
                 </View>
 
             </View>
@@ -44,25 +61,3 @@ export default function Home(){
         </ScrollView>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-      backgroundColor: '#141a28',
-      width: '100%',
-      height: '100%'
-    },
-  
-    containerView:{
-      display:'flex',
-      flexDirection:'column',
-      alignItems:'center'
-    },
-  
-    textBanner: {
-      fontSize: 30,
-      color: "white",
-      marginTop: 15,
-      marginLeft: -180,
-      fontWeight: 'bold'
-    }
-  });

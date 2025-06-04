@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-      backgroundColor: '#141a28',
+      backgroundColor: '#000',
       width: '100%',
       height: '100%'
     },
@@ -13,12 +13,10 @@ const styles = StyleSheet.create({
       alignItems:'center'
     },
   
-    textBanner: {
-      fontSize: 30,
+    textHeader: {
+      fontSize: 25,
       color: "white",
-      marginTop: 15,
-      marginLeft: -180,
-      fontWeight: 'bold'
+      fontWeight: "bold",
     }
 });
 

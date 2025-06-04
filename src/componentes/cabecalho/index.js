@@ -11,7 +11,7 @@ export default function Cabecalho(){
 
             <TouchableOpacity>
 
-            <Feather style={{marginLeft: -70}} name='menu' size={36} color='#fff'/>
+            <Feather  name='menu' size={36} color='#fff'/>
 
             </TouchableOpacity>
 

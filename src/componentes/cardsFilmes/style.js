@@ -21,9 +21,7 @@ const styles = StyleSheet.create({
         display:'flex',
         flexDirection:'column',
         alignItems:'center',
-        backgroundColor: '#141a45',
         padding:'15px',
-        borderRadius:'10px',
         marginBottom: '10px',
         marginRight: '20px',
         width:'150px'
@@ -32,17 +30,17 @@ const styles = StyleSheet.create({
     titulo:{
         color: '#fff',
         fontSize:12,
-        paddingTop:8
-    },
-    textNota:{
-        fontSize:10,
-        color: '#fff',
-        paddingLeft:4
+        paddingTop:8,
     },
     images:{
         width:'130px',
         height:170,
         borderRadius:8
+    },
+    viewCards:{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
     }
 })
 
