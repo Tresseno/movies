@@ -1,47 +1,82 @@
-import {StyleSheet} from "react-native";
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    containerFilmes:{
-        paddingTop:20,
-        paddingBottom:16,
-        paddingRight:16,
-        width:140,
-        height:28
+    cardContainer: {
+        width: 300,
+        borderRadius: 12,
+        backgroundColor: '#fff',
+        margin: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.15,
+        shadowRadius: 6,
+        elevation: 5,
+        overflow: 'hidden'
     },
 
-    viewPrincipalFilmes:{
-        display:'flex',
-        gap:'20px',
-        flexDirection:'row',
-        marginLeft:'-93px',
-        marginBottom:'20px'
+    image: {
+        width: '100%',
+        height: 150,
     },
 
-    viewFilmes:{
-        display:'flex',
-        flexDirection:'column',
-        alignItems:'center',
-        padding:'15px',
-        marginBottom: '10px',
-        marginRight: '20px',
-        width:'150px'
+    infoContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        padding: 10,
+        alignItems: 'center',
     },
 
-    titulo:{
+    textContainer: {
+        flex: 1,
+    },
+
+    title: {
+        fontWeight: 'bold',
+        fontSize: 16,
+        color: '#333',
+    },
+
+    subInfo: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginTop: 2,
+    },
+
+    restaurante: {
+        fontSize: 13,
+        color: '#666',
+        marginRight: 4,
+    },
+
+    distancia: {
+        fontSize: 13,
+        color: '#666',
+        marginLeft: 2,
+    },
+
+    avaliacaoContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginTop: 4,
+    },
+
+    avaliacaoText: {
+        fontSize: 13,
+        color: '#888',
+        marginLeft: 4,
+    },
+
+    precoContainer: {
+        backgroundColor: '#c66b3d',
+        borderRadius: 6,
+        paddingVertical: 4,
+        paddingHorizontal: 8,
+    },
+
+    preco: {
         color: '#fff',
-        fontSize:12,
-        paddingTop:8,
+        fontWeight: 'bold',
     },
-    images:{
-        width:'130px',
-        height:170,
-        borderRadius:8
-    },
-    viewCards:{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center"
-    }
-})
+});
 
-export default styles
+export default styles;

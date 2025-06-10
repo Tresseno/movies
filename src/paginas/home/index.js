@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, FlatList, ScrollView} from 'react-native';
+import {StyleSheet, View, FlatList, ScrollView} from 'react-native';
 import Banner from "../../componentes/banner";
 import CardMovies from "../../componentes/cardsFilmes";
 import Filmes from "../../componentes/movies.js";
@@ -19,8 +19,6 @@ export default function Home(){
                 <Pesquisa/>
 
                 <Banner/>
-
-                <Text style={styles.textBanner}>Filmes</Text>
 
                 <View style={{width:"90%"}}>
 

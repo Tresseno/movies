@@ -14,11 +14,11 @@ const styles = StyleSheet.create({
         height: 35,
         width: '100%',
         marginLeft: 5,
-        borderColor: "white",
+        borderColor: "black",
         borderWidth: 3,
         borderRadius: 20,
         padding: 25,
-        color: "white",
+        color: "black",
         fontSize: 15
     },
 })
