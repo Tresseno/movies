@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     cardContainer: {
-        width: 300,
+        width: 220,
         borderRadius: 12,
         backgroundColor: '#fff',
         margin: 10,
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
 
     image: {
         width: '100%',
-        height: 150,
+        height: 320,
     },
 
     infoContainer: {
