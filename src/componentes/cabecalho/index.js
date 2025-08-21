@@ -15,7 +15,7 @@ export default function Cabecalho(){
 
             </TouchableOpacity>
 
-            <Text style={styles.textHeader}> APPLE </Text>
+            <Text style={styles.textHeader}> TRESSENO MOVIES </Text>
 
         </View>
 

@@ -1,22 +1,16 @@
 // index.js
 import React from 'react';
-import { Text, View } from 'react-native';
-import { Video } from 'expo-av';
+import { Text, View, Image } from 'react-native';
 import styles from './style';
 
 export default function Banner() {
     return (
         <View>
-            <Text style={styles.textBanner}> Em Cartaz </Text>
-            <Video
-                source={require('../../../assets/gif.mp4')} // ou use um link externo como uri
-                rate={1.0}
-                volume={1.0}
-                isMuted={false}
+            <Text style={styles.textBanner}>Em Cartaz</Text>
+            <Image
+                source={require('../../../assets/tanjiro-demon-slayer.gif')}
+                style={styles.gifBanner}
                 resizeMode="cover"
-                shouldPlay
-                isLooping
-                style={styles.videoBanner}
             />
         </View>
     );

@@ -140,7 +140,12 @@ export default function Home() {
                     keyExtractor={(item) => item.id}
                     renderItem={({ item }) => (
 
-                        <CardMovies titulo={item.title} nota={item.note_avarage} imagem={item.poster_path} />
+                        <CardMovies
+                            titulo={item.title}
+                            nota={item.vote_average}
+                            imagem={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
+                            descricao={item.overview}
+                        />
 
                     )}
 
