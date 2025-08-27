@@ -11,11 +11,11 @@ export default function Cabecalho(){
 
             <TouchableOpacity>
 
-            <Feather  name='menu' size={36} color='black'/>
+            <Feather  name='menu' size={36} color='#fff'/>
 
             </TouchableOpacity>
 
-            <Text style={styles.textHeader}> TRESSENO MOVIES </Text>
+            <Text style={styles.textHeader}> MOVIES </Text>
 
         </View>
 

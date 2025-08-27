@@ -1,5 +1,8 @@
 // style.js
 import { StyleSheet } from "react-native";
+import { Dimensions } from "react-native";
+
+const largura = Dimensions.get('screen').width
 
 const styles = StyleSheet.create({
   textBanner: {
@@ -7,14 +10,15 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginVertical: 10,
     textAlign: "center",
+    color: '#fff'
   },
   gifBanner: {
-  width: "90%",
-  height: undefined,     // deixa a altura ser calculada
-  aspectRatio: 16 / 9,   // mantém proporção (aqui 16:9)
+  width: largura - 90,
+  padding: 16,
   alignSelf: "center",
   borderRadius: 12,
   },
+
 });
 
 

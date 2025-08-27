@@ -1,113 +1,88 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-
   container: {
-    flex: 1,
-    backgroundColor: "#f5f5f5", // fundo claro
-  },
-
-  content: {
     flexGrow: 1,
+    backgroundColor: "#0d1b2a", // fundo escuro
     justifyContent: "center",
     alignItems: "center",
-  },
-
-  backdrop: {
-    width: "100%",
-    minHeight: "100%",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-
-  overlay: {
-    flex: 1,
-    width: "100%",
-    backgroundColor: "rgba(255,255,255,0.7)", // overlay claro
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 20,
-  },
-
-  card: {
-    flexDirection: "row",
-    backgroundColor: "#fff",
-    borderRadius: 16,
-    padding: 20,
-    shadowColor: "#000",
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 5,
-    width: "90%",
-    maxWidth: 850,
+    padding: 16,
   },
 
   image: {
-    width: 200,
-    height: 300,
+    width: "100%",
+    height: 400,
     borderRadius: 12,
-    marginRight: 20,
+    resizeMode: "contain",
+    marginBottom: 16,
   },
 
-  textContainer: {
+  card: {
+    backgroundColor: "#1b263b", // oxford-blue
+    borderRadius: 16,
+    padding: 16,
+    shadowColor: "#000",
+    shadowOpacity: 0.25,
+    shadowRadius: 8,
+    elevation: 5,
+    width: "95%",
+    maxWidth: 850,
+    alignItems: "center",
+  },
+
+  info: {
     flex: 1,
-    justifyContent: "space-between",
+    width: "100%",
   },
 
   title: {
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: "bold",
-    color: "#222",
+    color: "#e0e1dd", // platinum
+    marginBottom: 8,
+    textAlign: "center",
+  },
+
+  rating: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#778da9", // silver-lake-blue
     marginBottom: 10,
+    textAlign: "center",
   },
 
   description: {
-    fontSize: 16,
-    color: "#555",
-    marginBottom: 15,
-  },
-
-  ratingBox: {
-    backgroundColor: "#4a90e2", // azul suave
-    alignSelf: "flex-start",
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 20,
+    fontSize: 15,
+    color: "#e0e1dd",
     marginBottom: 20,
+    textAlign: "justify",
   },
 
-  ratingText: {
-    fontSize: 16,
-    fontWeight: "bold",
-    color: "#fff",
-  },
-
-  watchButton: {
-    backgroundColor: "#6c63ff", // roxo claro
+  button: {
+    backgroundColor: "#415a77", // yinmn-blue
     paddingVertical: 12,
     borderRadius: 25,
     alignItems: "center",
     marginBottom: 12,
   },
 
-  watchButtonText: {
-    color: "#fff",
+  buttonText: {
+    color: "#e0e1dd",
     fontSize: 16,
     fontWeight: "bold",
   },
 
   backButton: {
-    backgroundColor: "#e0e0e0",
+    backgroundColor: "#778da9",
     paddingVertical: 10,
     borderRadius: 25,
     alignItems: "center",
   },
 
   backButtonText: {
-    color: "#333",
+    color: "#0d1b2a", // contraste no fundo claro
     fontSize: 14,
   },
-
 });
 
 export default styles;
