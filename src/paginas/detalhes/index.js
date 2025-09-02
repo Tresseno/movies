@@ -25,7 +25,7 @@ export default function Detalhes() {
               marginRight: width > 700 ? 16 : 0,
             }
           ]}
-          source={{ uri: route.params.imagem }}
+          source={{ uri: (`https://image.tmdb.org/t/p/original/${route.params.imagem}`)}}
           resizeMode="cover"
         />
 
