@@ -1,6 +1,7 @@
-import { View, Text, Image, FlatList } from 'react-native';
+import { View, Text, Image, FlatList, StyleSheet } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import { useEffect, useState } from 'react';
+import styles from "./resul";
 
 export default function PesquisaFilmes() {
   const route = useRoute();
@@ -13,34 +14,37 @@ export default function PesquisaFilmes() {
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNTEyZWJkNTExZTdhZWQzNWZkNzE0MzE2ZTU0YmMwMCIsIm5iZiI6MTc1NTcwNjk5NS4wMDcsInN1YiI6IjY4YTVmNjczMzJjZGE4ZjBhZmZkMjc5NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kVJb8PiBJYPHS9BfuRiNIP4o8NF-Ff26a2Qz8F-66Ew`
+          Authorization: `Bearer SEU_TOKEN_AQUI`
         }
       };
 
-      const response = await fetch(url, options)
-      const data = await response.json()
-      setFilmes(data.results)
+      const response = await fetch(url, options);
+      const data = await response.json();
+      setFilmes(data.results);
     }
 
-    buscaFilmes()
-  }, [route.params.pesquisa])
+    buscaFilmes();
+  }, [route.params.pesquisa]);
 
   return (
-    <View>
+    <View style={styles.container}>
       <FlatList
         data={pesquisaFilmes}
         keyExtractor={(item) => item.id.toString()}
+        contentContainerStyle={styles.list}
         renderItem={({ item }) => (
-          <View>
-            <Text>Filme: {item.title}</Text>
-            <Text>Nota: {item.vote_average}</Text>
+          <View style={styles.card}>
             <Image
-              style={{ width: "100%", height: 150 }}
-              source={{ uri: `https://image.tmdb.org/t/p/original${item.poster_path}` }}
+              style={styles.poster}
+              source={{ uri: `https://image.tmdb.org/t/p/w500${item.poster_path}` }}
             />
+            <View style={styles.info}>
+              <Text style={styles.title}>{item.title}</Text>
+              <Text style={styles.rating}>⭐ {item.vote_average.toFixed(1)}</Text>
+            </View>
           </View>
         )}
       />
     </View>
-  )
+  );
 }

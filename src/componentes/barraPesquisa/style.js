@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   containerSearch: {
     flexDirection: 'row',
     width: '90%',
-    backgroundColor: '#415a77', // yinmn-blue
+    backgroundColor: '#415a77',
     borderRadius: 8,
     alignItems: 'center',
     paddingHorizontal: 10,
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 40,
     marginLeft: 5,
-    color: '#e0e1dd', // texto claro
+    color: '#e0e1dd',
     fontSize: 16,
   },
 });

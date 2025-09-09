@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   cardContainer: {
     width: 220,
     borderRadius: 12,
-    backgroundColor: '#1b263b', // oxford-blue
+    backgroundColor: '#1b263b',
     margin: 10,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   title: {
     fontWeight: 'bold',
     fontSize: 16,
-    color: '#e0e1dd', // platinum
+    color: '#e0e1dd',
   },
 });
 

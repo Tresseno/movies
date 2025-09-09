@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
-    backgroundColor: "#0d1b2a", // fundo escuro
+    backgroundColor: "#0d1b2a",
     justifyContent: "center",
     alignItems: "center",
     padding: 16,
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   },
 
   card: {
-    backgroundColor: "#1b263b", // oxford-blue
+    backgroundColor: "#1b263b",
     borderRadius: 16,
     padding: 16,
     shadowColor: "#000",
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 22,
     fontWeight: "bold",
-    color: "#e0e1dd", // platinum
+    color: "#e0e1dd",
     marginBottom: 8,
     textAlign: "center",
   },
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   rating: {
     fontSize: 16,
     fontWeight: "600",
-    color: "#778da9", // silver-lake-blue
+    color: "#778da9",
     marginBottom: 10,
     textAlign: "center",
   },
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    backgroundColor: "#415a77", // yinmn-blue
+    backgroundColor: "#415a77",
     paddingVertical: 12,
     borderRadius: 25,
     alignItems: "center",
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
   },
 
   backButtonText: {
-    color: "#0d1b2a", // contraste no fundo claro
+    color: "#0d1b2a",
     fontSize: 14,
   },
 });

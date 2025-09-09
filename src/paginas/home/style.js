@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#0d1b2a", // rich-black
+    backgroundColor: "#0d1b2a",
     width: "100%",
     height: "100%",
   },
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 
   textHeader: {
     fontSize: 25,
-    color: "#e0e1dd", // platinum
+    color: "#e0e1dd",
     fontWeight: "bold",
   },
 });
